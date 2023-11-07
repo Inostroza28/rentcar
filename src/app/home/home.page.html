@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      RENT CAR
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-card [routerLink]="['/view-post']">
+    <img alt="Silhouette of mountains" src="http://imgcf.ecn.cl/600/64/64e79aff48933548632d7aa2fdf239cb28f365eb.bin.jpg"/>
+    <ion-card-header>
+      <h1>Arrienda Auto</h1>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        Arrienda tu auto electrico, cuida el medioambiente. Contacto: rentcar@electric.cl
+      </p>
+      <p>
+        {{hoy | date:"medium"}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button [routerLink]="['/home']" tab="home">
+          <ion-icon name="home"></ion-icon>
+          Feed
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/search']" tab="search">
+          <ion-icon name="search"></ion-icon>
+          Search
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/create-post']" tab="Post">
+          <ion-icon name="add"></ion-icon>
+          Post
+        </ion-tab-button>
+        <ion-tab-button [routerLink]="['/login']" tab="profile">
+          <ion-icon name="person"></ion-icon>
+          Profile
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>
