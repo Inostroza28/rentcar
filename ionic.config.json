@@ -1,7 +1,0 @@
-{
-  "name": "countAli",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
